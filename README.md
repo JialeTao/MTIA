@@ -13,3 +13,7 @@ In our proposed motion transformer, we introduce two types of tokens in our prop
 
 ![video](videos/TaiChiHD.gif)
 
+![video](videos/TEDTalks.gif)
+
+![video](videos/VoxCeleb.gif)
+
