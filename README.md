@@ -35,14 +35,6 @@ To make a demo animation, specify the driving video and source image, the result
 ## **Pretrained models**
 Coming soon
 
-## **Citation**
-    @inproceedings{tao2022motion,
-    title={Motion Transformer for Unsupervised Image Animation},
-    author={Tao, Jiale and Wang, Biao and Ge, Tiezheng and Jiang, Yuning and Li, Wen and Duan, Lixin},
-    booktitle={European Conference on Computer Vision},
-    year={2022}
-    }
-
 ## **Animation**
 
 ![video](videos/TaiChiHD.gif)
@@ -50,6 +42,14 @@ Coming soon
 ![video](videos/TEDTalks.gif)
 
 ![video](videos/VoxCeleb.gif)
+
+## **Citation**
+    @inproceedings{tao2022motion,
+    title={Motion Transformer for Unsupervised Image Animation},
+    author={Tao, Jiale and Wang, Biao and Ge, Tiezheng and Jiang, Yuning and Li, Wen and Duan, Lixin},
+    booktitle={European Conference on Computer Vision},
+    year={2022}
+    }
 
 ## **Acknowledgements**
 The implemetation is partially borrowed from [FOMM](https://github.com/AliaksandrSiarohin/first-order-model), [TokenPose](https://github.com/leeyegy/TokenPose) and [TransPose](https://github.com/yangsenius/TransPose), we thank the authors for their excellent works.
