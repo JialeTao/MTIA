@@ -1,0 +1,16 @@
+scikit-image
+scikit-learn
+scipy
+pandas
+imageio
+imageio-ffmpeg
+pillow==8.2.0
+matplotlib
+pyyaml
+timm
+tqdm
+dataclasses
+torch==1.6.0
+einops==0.3
+timm==0.4
+opencv-python==3.4
