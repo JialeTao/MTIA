@@ -12,7 +12,7 @@ The model are trained on 8 Tesla V100 cards, pytorch vesion 1.6 and 1.8 with pyt
     pip install -r requirements.txt
 
 ## **Datasets**
-Following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) to download **TaiChiHD**,**Voxceleb1**, and **MGIF**. And for the **TED384**, following [MRAA](https://github.com/snap-research/articulated-animation). After downloading and pre-processing, the dataset should be placed in the `./data` folder or you can change the parameter `root_dir` in the yaml config file. Note that we save the video dataset with png frames format for better training IO performance. All train and test video frames are specified in txt files in the `./data` folder. The tree structure of the dataset path is given in the following.
+Following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) to download **TaiChiHD**,**Voxceleb1**, and **MGIF**. And for the **TED384**, following [MRAA](https://github.com/snap-research/articulated-animation). After downloading and pre-processing, the dataset should be placed in the `./data` folder or you can change the parameter `root_dir` in the yaml config file. Note that we save the video dataset in png frames format for better training IO performance. All train and test video frames are specified in txt files in the `./data` folder. The tree structure of the dataset path is given in the following.
 
     |-- data/taichi-png, data/TED384-png, data/voxceleb1-png, data/moving-gif-png
         |-- train
@@ -43,7 +43,7 @@ In our proposed motion transformer, we introduce two types of tokens in our prop
 ![image](https://user-images.githubusercontent.com/38600167/178645760-1f1a9d51-cba4-4083-812e-f3a5ed432a80.png)
 
 ## **Training**
-We train the model with pytorch distributed dataparallel on 8 cards.
+We train the model on 8 cards and use pytorch DistributedDataPrallel.
 
     CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 run.py --config config/dataset.yaml
     
