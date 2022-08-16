@@ -3,13 +3,38 @@
 
 This is the project page of the paper **Motion Transformer for Unsupervised Image Animation (ECCV 2022)**. Due to the security policy of the company, we are in the code approval process, once it is finished, the codes will be released here.
 
+<!-- ### **Updates:** -->
+2022.8.15: The codes are released.
+
 ## **Environments**
 The model are trained on 8 Tesla V100 cards, pytorch vesion 1.6 and 1.8 with python 3.6 are tested fine. Basic installations are given in requiremetns.txt.
 
     pip install -r requirements.txt
 
 ## **Datasets**
-For **TaiChiHD**,**Voxceleb1**, and **MGIF**, following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model). And for TED384, following [MRAA](https://github.com/snap-research/articulated-animation). After downloading and pre-processing, the dataset should be placed in the `./data` folder or you can change the parameter `root_dir` in the yaml config file. Note that we save the video dataset with png frames format (for example,`./data/taichi-png/train/video-id/frames-id.png`), for better training IO performance. All train and test video frames are specified in txt files in the `./data` folder.
+Following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) to download **TaiChiHD**,**Voxceleb1**, and **MGIF**. And for the **TED384**, following [MRAA](https://github.com/snap-research/articulated-animation). After downloading and pre-processing, the dataset should be placed in the `./data` folder or you can change the parameter `root_dir` in the yaml config file. Note that we save the video dataset with png frames format for better training IO performance. All train and test video frames are specified in txt files in the `./data` folder. The tree structure of the dataset path is given in the following.
+
+    |-- data/taichi-png, data/TED384-png, data/voxceleb1-png, data/moving-gif-png
+        |-- train
+            |-- video1
+                |-- 00000.png
+                |-- 00001.png
+                |-- ...
+            |-- video2
+                |-- 00000.png
+                |-- 00001.png
+                |-- ...
+            |-- ...
+        |-- test
+            |-- video1
+                |-- 00000.png
+                |-- 00001.png
+                |-- ...
+            |-- video2
+                |-- 00000.png
+                |-- 00001.png
+                |-- ...
+            |-- ...
 
 ## **Method**
 
