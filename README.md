@@ -7,7 +7,11 @@ This is the project page of the paper **Motion Transformer for Unsupervised Imag
 **2022.8.15:** Codes are released.
 
 ## **Environments**
+<<<<<<< HEAD
 The model is trained on 8 Tesla V100 cards, pytorch vesion 1.6 and 1.8 with python 3.6 are tested fine. Basic installations are given in requiremetns.txt.
+=======
+The model are trained on 8 Tesla V100 cards, pytorch vesion 1.6 and 1.8 with python 3.6 are tested fine. Basic installations are given in requiremetns.txt.
+>>>>>>> 748d90b9ec1ef7d00a71ae923baa94ec98d768ef
 
     pip install -r requirements.txt
 
