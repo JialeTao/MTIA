@@ -87,7 +87,7 @@ visualizer_params:
 
 
 MODEL:
-  ## from defaults.py
+  ## default
   TAG_PER_JOINT: True
   HIDDEN_HEATMAP_DIM: -1
   MULTI_TRANSFORMER_DEPTH: [12, 12]
@@ -95,7 +95,7 @@ MODEL:
   MULTI_DIM: [48, 48]
   NUM_BRANCHES: 1
   BASE_CHANNEL: 32
-  ## from defaults.py
+  ## default
   ESTIMATE_JACOBIAN: True
   TEMPERATURE: 0.1
   DATA_PREPROCESS: False
