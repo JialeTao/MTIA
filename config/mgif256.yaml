@@ -42,7 +42,7 @@ model_params:
 
 train_params:
   num_epochs: 100
-  num_repeats: 25
+  num_repeats: 50
   epoch_milestones: [60, 90]
   lr_generator: 2.0e-4
   lr_discriminator: 2.0e-4
@@ -58,9 +58,9 @@ train_params:
     sigma_tps: 0.005
     points_tps: 5
   loss_weights:
-    generator_gan: 1
-    discriminator_gan: 1
-    feature_matching: [10, 10, 10, 10]
+    generator_gan: 0
+    discriminator_gan: 0
+    feature_matching: [0, 0, 0, 0]
     perceptual: [10, 10, 10, 10, 10]
     equivariance_value: 10
     equivariance_jacobian: 10
@@ -100,10 +100,10 @@ MODEL:
   DATA_PREPROCESS: False
   FIX_IMG2MOTION_ATTENTION: False
 
-  INIT_WEIGHTS: True
+  INIT_WEIGHTS: False
   NAME: pose_tokenpose_b
   NUM_JOINTS: 10
-  PRETRAINED: 'checkpoints/hrnet_w32-36af842e.pth'
+  PRETRAINED: ''
   TARGET_TYPE: gaussian
   TRANSFORMER_DEPTH: 12
   TRANSFORMER_HEADS: 8
