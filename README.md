@@ -1,4 +1,4 @@
-# **Motion Transformer for Unsupervised Image Animation**
+# **[ECCV 2022] Motion Transformer for Unsupervised Image Animation**
 ## **Codes**
 
 This is the project page of the paper **Motion Transformer for Unsupervised Image Animation (ECCV 2022)**. Due to the security policy of the company, we are in the code approval process, once it is finished, the codes will be released here.
