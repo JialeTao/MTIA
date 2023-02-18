@@ -57,8 +57,6 @@ To make a demo animation, specify the driving video and source image, the result
 
     python demo.py --mode demo --config path/to/config --checkpoint path/to/model.pth --driving_video path/to/video.mp4 --source_image path/to/image.png --result_video path/to/result.mp4 --adapt_scale
 
-## **Pretrained models**
-Coming soon
 
 ## **Animation**
 ![video](videos/TEDTalks.gif)
