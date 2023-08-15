@@ -38,9 +38,8 @@ Following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) to dow
 
 
 ## **Checkpoints**
-Baiduyun: https://pan.baidu.com/s/1Zlr309OcsDuz5FaULQJYWQ passwd:qp6v
+[Google drive](https://drive.google.com/file/d/1Fv1ts026-6BwOUTexV1KxwW54pQiK1rY/view?usp=sharing) [Baiduyun](https://pan.baidu.com/s/1Zlr309OcsDuz5FaULQJYWQ) passwd:qp6v
 
-Google drive:  https://drive.google.com/file/d/1Fv1ts026-6BwOUTexV1KxwW54pQiK1rY/view?usp=sharing
 
 ## **Training**
 We train the model on 8 cards and use pytorch DistributedDataPrallel.
