@@ -1,5 +1,4 @@
-# **[ECCV 2022] Motion Transformer for Unsupervised Image Animation**
-## **Codes**
+## **[ECCV 2022] Motion Transformer for Unsupervised Image Animation**
 
 This is the project page of the paper **Motion Transformer for Unsupervised Image Animation (ECCV 2022)**.
 
@@ -7,12 +6,12 @@ This is the project page of the paper **Motion Transformer for Unsupervised Imag
 **2022.8.15:** Codes are released.
 
 ## **Environments**
-The model is trained on 8 Tesla V100 cards, pytorch vesion 1.6 and 1.8 with python 3.6 are tested fine. Basic installations are given in requiremetns.txt.
+The model is trained on 8 Tesla V100 cards, PyTorch version 1.6 and 1.8 with Python 3.6 are tested fine. Basic installations are given in requiremetns.txt.
 
     pip install -r requirements.txt
 
 ## **Datasets**
-Following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) to download **TaiChiHD**,**Voxceleb1**, and **MGIF**. And for the **TED384**, following [MRAA](https://github.com/snap-research/articulated-animation). After downloading and pre-processing, the dataset should be placed in the `./data` folder or you can change the parameter `root_dir` in the yaml config file. Note that we save the video dataset in png frames format for better training IO performance. All train and test video frames are specified in txt files in the `./data` folder. The tree structure of the dataset path is given in the following.
+Following [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) to download **TaiChiHD**,**Voxceleb1**, and **MGIF**. And for the **TED384**, following [MRAA](https://github.com/snap-research/articulated-animation). After downloading and pre-processing, the dataset should be placed in the `./data` folder or you can change the parameter `root_dir` in the yaml config file. Note that we save the video dataset in PNG frames format for better training IO performance. All train and test video frames are specified in txt files in the `./data` folder. The tree structure of the dataset path is given in the following.
 
     |-- data/taichi-png, data/TED384-png, data/voxceleb1-png, data/moving-gif-png
         |-- train
@@ -47,7 +46,7 @@ We train the model on 8 cards and use pytorch DistributedDataPrallel.
     CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 run.py --config config/dataset.yaml
     
 ## **Evaluation**
-Evaluate video reconstruction with following command, for more metrics, we recommend to see [FOMM-Pose-Evaluation](https://github.com/AliaksandrSiarohin/pose-evaluation).
+Evaluate video reconstruction with the following command, for more metrics, we recommend seeing [FOMM-Pose-Evaluation](https://github.com/AliaksandrSiarohin/pose-evaluation).
 
     CUDA_VISIBLE_DEVICES=0 python run.py --mode reconstruction --config path/to/config --checkpoint path/to/model.pth  
 
@@ -69,4 +68,4 @@ To make a demo animation, specify the driving video and source image, the result
     }
 
 ## **Acknowledgements**
-The implemetation is partially borrowed from [FOMM](https://github.com/AliaksandrSiarohin/first-order-model), [TokenPose](https://github.com/leeyegy/TokenPose) and [TransPose](https://github.com/yangsenius/TransPose), we thank the authors for their excellent works.
+The implementation is partially borrowed from [FOMM](https://github.com/AliaksandrSiarohin/first-order-model), [TokenPose](https://github.com/leeyegy/TokenPose) and [TransPose](https://github.com/yangsenius/TransPose), we thank the authors for their excellent works.
