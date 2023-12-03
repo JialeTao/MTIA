@@ -53,7 +53,7 @@ Evaluate video reconstruction with the following command, for more metrics, we r
 ## **Demo**
 To make a demo animation, specify the driving video and source image, the result video will be saved to result.mp4.
 
-    python demo.py --mode demo --config path/to/config --checkpoint path/to/model.pth --driving_video path/to/video.mp4 --source_image path/to/image.png --result_video path/to/result.mp4 --adapt_scale
+    python demo.py --config path/to/config --checkpoint path/to/model.pth --driving_video path/to/video.mp4 --source_image path/to/image.png --result_video path/to/result.mp4 --adapt_scale
 
 
 ## **Animation**
